@@ -1,4 +1,4 @@
-﻿@model IEnumerable<_2106Proj.Models.Document>
+﻿@model IEnumerable<_2106Proj.Models.InterpreterJob>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,10 +13,10 @@
     <thead>
         <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.DateCreated)
+                    @Html.DisplayNameFor(model => model.flag)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.DocumentName)
+                    @Html.DisplayNameFor(model => model.Content)
                 </th>
             <th></th>
         </tr>
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
+                @Html.DisplayFor(modelItem => item.flag)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DocumentName)
+                @Html.DisplayFor(modelItem => item.Content)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

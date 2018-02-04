@@ -20,3 +20,14 @@ C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\De
 C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.AssemblyInfo.cs
 C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.dll
 C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.pdb
+C:\School\2106\Project\Project\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.deps.json
+C:\School\2106\Project\Project\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.runtimeconfig.json
+C:\School\2106\Project\Project\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.runtimeconfig.dev.json
+C:\School\2106\Project\Project\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.dll
+C:\School\2106\Project\Project\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.pdb
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.csprojResolveAssemblyReference.cache
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.csproj.CoreCompileInputs.cache
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.AssemblyInfoInputs.cache
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.AssemblyInfo.cs
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.dll
+C:\School\2106\Project\Project\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.pdb

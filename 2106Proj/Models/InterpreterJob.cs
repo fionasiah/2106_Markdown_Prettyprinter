@@ -6,12 +6,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace _2106Proj.Models
 {
-    public class Document
+    public class InterpreterJob
     {
-        private String OwnerID { get; set; }
-        private String DocumentID { get; set; }
-        public DateTime DateCreated { get; set; }
-        public String DocumentName { get; set; }
+        public int flag { get; set; }
         public String Content { get; set; }
     }
 }

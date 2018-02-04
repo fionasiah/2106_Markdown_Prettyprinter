@@ -4,16 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using _2106Proj.Models;
 
-namespace _2106Proj.Models
+namespace _2106Proj.Controllers
 {
     public class DocumentController : Controller
     {
-        static List<Document> model = new List<Document>();
         // GET: Document
         public ActionResult Index()
         {
-            return View(model);
+            return View();
         }
 
         // GET: Document/Details/5
@@ -31,12 +31,12 @@ namespace _2106Proj.Models
         // POST: Document/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(InterpreterJob job)
         {
             try
             {
                 // TODO: Add insert logic here
-
+                job.flag = 1;
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -54,7 +54,7 @@ namespace _2106Proj.Models
         // POST: Document/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, InterpreterJob job)
         {
             try
             {
