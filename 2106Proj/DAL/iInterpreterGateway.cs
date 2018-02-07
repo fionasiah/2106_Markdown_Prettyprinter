@@ -8,6 +8,6 @@ namespace _2106Proj.DAL
 {
     interface iInterpreterGateway
     {
-        void JobReceiver(InterpreterJob job);
+        void JobReceiver(InterpreterJob job, DocumentGateway documentGateway);
     }
 }

@@ -132,4 +132,5 @@ function prevDocs() {
         prevDocsText.style.display = "none";
         prevDocsText.className = 'hide';
     }
+    return false;
 }
