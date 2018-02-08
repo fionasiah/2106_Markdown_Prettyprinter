@@ -1,0 +1,47 @@
+﻿@model _2106Proj.Models.Document
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<link rel="stylesheet" href="~/css/toolbar.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="~/js/editor.js"></script>
+
+<h2>Create</h2>
+
+<h4>Document</h4>
+<hr />
+<div class="row">
+    <div class="col-md-12" style="position:relative">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DocumentName" class="control-label"></label>
+                <input asp-for="DocumentName" class="form-control" size="35" />
+                <span asp-validation-for="DocumentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Content" class="control-label"></label>
+                <ul id="toolbar" onclick="addText(event)">
+                    <li id="bold"><a>Bold</a></li>
+                    <li id="italic"><a>Italic</a></li>
+                    <li id="underline"><a>Underline</a></li>
+                </ul>
+                <textarea id="tooltest" style="width:100%;"rows="50" asp-for="Content" class="form-control"></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
