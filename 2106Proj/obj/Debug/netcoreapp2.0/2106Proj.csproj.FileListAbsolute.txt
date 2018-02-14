@@ -9,3 +9,14 @@ C:\Users\junwe\source\repos\2106Proj\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.A
 C:\Users\junwe\source\repos\2106Proj\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.pdb
 C:\Users\junwe\source\repos\2106Proj\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.dll
 C:\Users\junwe\source\repos\2106Proj\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.pdb
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.deps.json
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.runtimeconfig.json
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.runtimeconfig.dev.json
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.dll
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\bin\Debug\netcoreapp2.0\2106Proj.pdb
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.csprojResolveAssemblyReference.cache
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.csproj.CoreCompileInputs.cache
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.AssemblyInfoInputs.cache
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.AssemblyInfo.cs
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.dll
+C:\Users\Xavier Tay\Documents\GitHub\2106_Markdown_Prettyprinter\2106Proj\obj\Debug\netcoreapp2.0\2106Proj.pdb

@@ -24,9 +24,17 @@
             <div class="form-group">
                 <label asp-for="Content" class="control-label"></label>
                 <ul id="toolbar" onclick="addText(event)">
-                    <li id="bold"><a>Bold</a></li>
-                    <li id="italic"><a>Italic</a></li>
-                    <li id="underline"><a>Underline</a></li>
+                    <li id="bold"><img src="~/images/toolbar/Bold.png"></li>
+                    <li id="italic"><img src="~/images/toolbar/Italic.png"></li>
+                    <li id="underline"><img src="~/images/toolbar/Underline.png"></li>
+                    <li id="strikethrough"><img src="~/images/toolbar/Strikeout.png"></li>
+                    <li id="redtext"><img src="~/images/toolbar/RedText.png"></li>
+                    <li id="highlight"><img src="~/images/toolbar/Highlight.png"></li>
+                    <li id="alignleft"><img src="~/images/toolbar/AlignLeft.png"></li>
+                    <li id="aligncenter"><img src="~/images/toolbar/AlignCenter.png"></li>
+                    <li id="alignright"><img src="~/images/toolbar/AlignRight.png"></li>
+                    <li id="unorderedlist"><img src="~/images/toolbar/UnorderedList.png"></li>
+                    <li id="orderedlist"><img src="~/images/toolbar/OrderedList.png"></li>
                 </ul>
                 <textarea id="tooltest" style="width:100%;"rows="50" asp-for="Content" class="form-control"></textarea>
                 <span asp-validation-for="Content" class="text-danger"></span>

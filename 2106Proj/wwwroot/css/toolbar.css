@@ -11,6 +11,8 @@
 
 li {
     float: left;
+    width: 30px;
+    height: 30px;
 }
 
 li a{
@@ -20,6 +22,7 @@ li a{
   padding: 14px 16px;
   text-decoration: none;
 }
+
 
 li a:hover {
     background-color: #DCDCDC;
