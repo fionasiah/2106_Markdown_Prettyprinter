@@ -120,3 +120,16 @@ $(function () {
         textarea.value += "1. Item1\n2. Item2";
     });
 });
+
+function prevDocs() {
+    var prevDocsText = document.getElementById('prevDocsText');
+
+    if (prevDocsText.className == 'hide') {  //check if classname is hide 
+        prevDocsText.style.display = "block";
+        prevDocsText.readOnly = true;
+        prevDocsText.className = 'show';
+    } else {
+        prevDocsText.style.display = "none";
+        prevDocsText.className = 'hide';
+    }
+}

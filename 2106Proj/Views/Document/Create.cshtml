@@ -39,7 +39,11 @@
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="button" id="prevDocsBtn" onclick="prevDocs()" value="Preview" class="btn btn-default" />
+            </div>
+            <div class="form-group">
+                <textarea id="prevDocsText" style= "display:none; width:100%;" rows="50" asp-for="Content" class="hide">Preview Text Here</textarea>
             </div>
         </form>
     </div>
