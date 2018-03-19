@@ -7,6 +7,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="~/js/editor.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+</script>
+<script src="jquery.emojiarea.js"></script>
+
+
+
 <h2>Create</h2>
 
 <h4>InterpreterJob</h4>
@@ -22,6 +30,40 @@
             </div>
             <div class="form-group">
                 <label asp-for="Content" class="control-label"></label>
+
+                @*Font select*@
+                <select>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="TimesNewRoman">Times New Roman</option>
+                </select>
+
+                @*Font size select*@
+                <select class="editableBox">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="18">18</option>
+                    <option value="24">24</option>
+                    <option value="30">30</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+                    <option value="60">60</option>
+                    <option value="72">72</option>
+                    <option value="96">96</option>
+                </select>
+
+                <div class="form-group">
+                    <input type="button" id="markdownSyntaxBtn" onclick="markdownSyntax()" value="Help" class="btn btn-default" />
+                </div>
+                <div class="form-group">
+                    <img src="~/images/Markdown Help.png" id="markdownsyntax" style="display:none" class="hide"/>
+                </div>
+
                 <ul id="toolbar" onclick="addText(event)">
                     <li id="bold"><img src="~/images/toolbar/Bold.png"></li>
                     <li id="italic"><img src="~/images/toolbar/Italic.png"></li>
@@ -32,18 +74,30 @@
                     <li id="alignleft"><img src="~/images/toolbar/AlignLeft.png"></li>
                     <li id="aligncenter"><img src="~/images/toolbar/AlignCenter.png"></li>
                     <li id="alignright"><img src="~/images/toolbar/AlignRight.png"></li>
+                    <li id="justify"><img src="~/images/toolbar/justify.png"></li>
                     <li id="unorderedlist"><img src="~/images/toolbar/UnorderedList.png"></li>
                     <li id="orderedlist"><img src="~/images/toolbar/OrderedList.png"></li>
+                    <li id="hyperlink"><img src="~/images/toolbar/hyperlink.png"></li>
+
+
+                    <li id="smileEmo"><img src="~/images/toolbar/smile.png"></li>
+                    <li id="winkEmo"><img src="~/images/toolbar/wink.png"></li>
+                    <li id="joyEmo"><img src="~/images/toolbar/joy.png"></li>
+                    <li id="fearfulEmo"><img src="~/images/toolbar/fearful.png"></li>
+                    <li id="grinEmo"><img src="~/images/toolbar/grin.png"></li>
+                    <li id="angryEmo"><img src="~/images/toolbar/angry.png"></li>
                 </ul>
+
                 <textarea id="tooltest" style="width:100%;" rows="50" asp-for="Content" class="form-control"></textarea>
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
                 <input type="button" id="prevDocsBtn" onclick="prevDocs()" value="Preview" class="btn btn-default" />
             </div>
             <div class="form-group">
-                <textarea id="prevDocsText" style= "display:none; width:100%;" rows="50" asp-for="Content" class="hide">Preview Text Here</textarea>
+                <textarea id="prevDocsText" style="display:none; width:100%;" rows="50" asp-for="Content" class="hide">Preview Text Here</textarea>
             </div>
         </form>
     </div>
@@ -55,4 +109,6 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
 }
+

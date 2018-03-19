@@ -31,6 +31,7 @@ namespace _2106Proj
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                
             }
             else
             {
