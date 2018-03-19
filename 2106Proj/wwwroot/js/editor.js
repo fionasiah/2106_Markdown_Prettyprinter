@@ -73,6 +73,7 @@ function prevDocs() {
         prevDocsText.style.display = "none";
         prevDocsText.className = 'hide';
     }
+<<<<<<< HEAD
 }
 
 function markdownSyntax() {
@@ -85,4 +86,7 @@ function markdownSyntax() {
         markdownSyntax.style.display = "none";
         markdownSyntax.className = 'hide';
     }
+=======
+    return false;
+>>>>>>> 43589cbcbd73c2412e8c6fd3bb9e1ca5acd69993
 }

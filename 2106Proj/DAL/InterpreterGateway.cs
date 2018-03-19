@@ -8,11 +8,11 @@ namespace _2106Proj.DAL
 {
     public class InterpreterGateway : iInterpreterGateway
     {
-        public void JobReceiver(InterpreterJob job)
+        public void JobReceiver(InterpreterJob job, DocumentGateway documentGateway)
         {
             job.Content += " Interpreted";
-            DocumentGateway gateway = new DocumentGateway();
-            gateway.DocumentReceiver(job);
+            job.flag = 1;
+            documentGateway.DocumentReceiver(job);
         }
     }
 }

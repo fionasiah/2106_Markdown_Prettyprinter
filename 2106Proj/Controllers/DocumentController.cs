@@ -5,14 +5,27 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using _2106Proj.Models;
+using _2106Proj.DAL;
 
 namespace _2106Proj.Controllers
 {
     public class DocumentController : Controller
     {
+        public DocumentGateway DGateway = new DocumentGateway();
+        public InterpreterGateway IGateway = new InterpreterGateway();
         // GET: Document
         public ActionResult Index()
         {
+            return View();
+        }
+
+        // GET: Document
+        public ActionResult Preview(string content)
+        {
+            InterpreterJob job = new InterpreterJob();
+            job.Content = content;
+            IGateway.JobReceiver(job, DGateway);
+            ViewBag.Preview = DGateway.Preview;
             return View();
         }
 

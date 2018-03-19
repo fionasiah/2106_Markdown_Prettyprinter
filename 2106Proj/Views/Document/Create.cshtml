@@ -17,7 +17,7 @@
 
 <h2>Create</h2>
 
-<h4>InterpreterJob</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-12" style="position:relative">
@@ -87,20 +87,40 @@
                     <li id="grinEmo"><img src="~/images/toolbar/grin.png"></li>
                     <li id="angryEmo"><img src="~/images/toolbar/angry.png"></li>
                 </ul>
+<<<<<<< HEAD
 
                 <textarea id="tooltest" style="width:100%;" rows="50" asp-for="Content" class="form-control"></textarea>
+=======
+                <textarea id="tooltest" style="width:100%;" rows="50" name="content" asp-for="Content" class="form-control"></textarea>
+>>>>>>> 43589cbcbd73c2412e8c6fd3bb9e1ca5acd69993
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
+<<<<<<< HEAD
                 <input type="button" id="prevDocsBtn" onclick="prevDocs()" value="Preview" class="btn btn-default" />
             </div>
             <div class="form-group">
                 <textarea id="prevDocsText" style="display:none; width:100%;" rows="50" asp-for="Content" class="hide">Preview Text Here</textarea>
+=======
+                @Html.ActionLink("Preview", "Preview")
+                <script type="text/javascript">
+                        $(function () {
+                            var url = '@Url.Action("Preview", "DocumentController")';
+                            $("input#Preview").on('click', function () {
+                                var content = $('tooltest').val();
+                                $.ajax({
+                                    url: url,
+                                    data: {content : content}
+                                })
+                            });
+                        });
+                </script>
+>>>>>>> 43589cbcbd73c2412e8c6fd3bb9e1ca5acd69993
             </div>
         </form>
-    </div>
+</div>
 </div>
 
 <div>
